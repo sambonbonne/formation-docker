@@ -1,0 +1,18 @@
+version: '3'
+
+networks:
+  formation-07:
+    driver: bridge
+    external: false
+
+services:
+  web:
+    build: .
+    ports:
+      - 80:8080
+    networks:
+      - formation-07
+  db:
+    image: redis
+    networks:
+      - formation-07

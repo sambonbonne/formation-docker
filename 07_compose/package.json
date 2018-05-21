@@ -1,0 +1,16 @@
+{
+  "name": "formation-07-compose",
+  "version": "1.0.0",
+  "description": "Test for Docker Compose",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel DENIS <samuel@denis.tech>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "redis": "^2.8.0"
+  }
+}
