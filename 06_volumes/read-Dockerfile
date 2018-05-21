@@ -1,0 +1,3 @@
+FROM alpine:latest
+VOLUME /mnt
+ENTRYPOINT while sleep 2; do cat /mnt/fortune; done

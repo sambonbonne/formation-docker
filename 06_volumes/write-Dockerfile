@@ -1,0 +1,5 @@
+FROM alpine:latest
+
+RUN apk add --update-cache fortune
+VOLUME /mnt
+ENTRYPOINT while sleep 2; do fortune > /mnt/fortune; done
